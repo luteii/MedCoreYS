@@ -1,0 +1,12 @@
+UPDATE Randevular SET teshis = N'Akut Migren Atağı' WHERE teshis LIKE 'Akut Migren%' OR teshis LIKE N'Akut Migren%';
+UPDATE Randevular SET teshis = N'Üst Solunum Yolu Enfeksiyonu' WHERE teshis LIKE '%st Solunum Yolu%';
+UPDATE Randevular SET teshis = N'Mekanik Bel Ağrısı / Kas Spazmı' WHERE teshis LIKE 'Mekanik Bel%';
+UPDATE Randevular SET sikayet = N'Şiddetli baş ağrısı ve mide bulantısı şikayetiyle geldi.' WHERE sikayet LIKE '%iddetli ba%';
+UPDATE Randevular SET sikayet = N'Boğaz ağrısı, yutkunma güçlüğü ve yüksek ateş.' WHERE sikayet LIKE 'Bo%az a%';
+UPDATE Randevular SET sikayet = N'Bel ağrısı ve aşırı halsizlik.' WHERE sikayet LIKE 'Bel a%r%';
+UPDATE Randevular SET notlar = N'Bol dinlenme, sıvı tüketimi önerildi. Reçete yazıldı.' WHERE notlar LIKE 'Bol dinlenme%';
+UPDATE ReceteDetaylari SET kullanim_sekli = N'Günde 2 kez tok karnına (Sabah-Akşam)' WHERE kullanim_sekli LIKE 'G%nde 2 kez tok%';
+UPDATE ReceteDetaylari SET kullanim_sekli = N'Günde 1 kez yatmadan önce' WHERE kullanim_sekli LIKE 'G%nde 1 kez yat%';
+UPDATE TahlilSonuclari SET sonuc_degeri = N'Normal Sınırlar İçinde / 12.5 mg' WHERE sonuc_degeri LIKE 'Normal S%n%rlar%';
+UPDATE TahlilSonuclari SET doktor_aciklamasi = N'Sonuçlar referans aralığında. Endişe edilecek bir durum yok.' WHERE doktor_aciklamasi LIKE 'Sonu%lar referans%';
+UPDATE TahlilSonuclari SET doktor_aciklamasi = N'Hastadan numune alındı, laboratuvardan sonuç bekleniyor.' WHERE doktor_aciklamasi LIKE 'Hastadan numune%';
